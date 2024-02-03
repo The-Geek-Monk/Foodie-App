@@ -1,0 +1,64 @@
+.card-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex-direction: column;
+    max-width: 250px;
+    max-height: 250px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex-shrink: 0;
+}
+
+.image-container img {
+    width: 250px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.info-container {
+    padding: 16px;
+}
+
+.restaurant-name {
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.food-categories {
+    color: #666;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #f8f8f8;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating img {
+    margin-right: 8px;
+}
+
+.delivery-time,
+.price-range {
+    color: #666;
+    font-size: 14px;
+}

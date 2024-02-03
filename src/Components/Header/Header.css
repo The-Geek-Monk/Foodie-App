@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+}
+
+li:hover {
+    color: #04AA6D;
+    cursor: pointer;
+}
+
+.login-button {
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.login-button:hover {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+}
