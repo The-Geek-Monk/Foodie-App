@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    background-color: blue;
+    background-color: #e5e5e5;
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
@@ -12,12 +12,16 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    color: white;
+    color: black;
 }
 
 li:hover {
-    color: #04AA6D;
+    color: #f17228;
     cursor: pointer;
+}
+
+li {
+    font-weight: bold;
 }
 
 .login-button {
