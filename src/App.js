@@ -7,6 +7,7 @@ import { Footer } from "./Components/Footer/Footer";
 import { About } from "./Components/About/About";
 
 import "./App.css";
+import { Contact } from "./Components/Contact/Contact";
 
 const AppLayout = () => {
   return (
@@ -15,7 +16,8 @@ const AppLayout = () => {
       {/* <Search />
       <Card />
       <Footer /> */}
-      <About />
+      <Contact />
+      <Footer />
     </>
   );
 };
