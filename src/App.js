@@ -1,26 +1,19 @@
 import React from "react";
-import ReactDom from "react-dom/client";
-import { Header } from "./Components/Header/Header";
-import { Search } from "./Components/Search/Search";
-import { Card } from "./Components/Card/Card";
-import { Footer } from "./Components/Footer/Footer";
-import { About } from "./Components/About/About";
-
+import ReactDOM from "react-dom/client";
 import "./App.css";
-import { Contact } from "./Components/Contact/Contact";
+import Header from "./Components/Header/Header";
+import Body from "./Components/Body/Body";
+import Footer from "./Components/Footer/Footer";
 
 const AppLayout = () => {
   return (
-    <>
+    <div className="appLayout">
       <Header />
-      {/* <Search />
-      <Card />
-      <Footer /> */}
-      <Contact />
+      <Body />
       <Footer />
-    </>
+    </div>
   );
 };
 
-const root = ReactDom.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<AppLayout />);

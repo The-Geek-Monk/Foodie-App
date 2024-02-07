@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className="header">
       <div className="left">
@@ -20,3 +20,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
