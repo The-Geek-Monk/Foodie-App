@@ -58,10 +58,11 @@ const Body = () => {
 
   return (
     <div className="body-container">
-      <div className="search-container">
+      {/* <div className="search-container">
         <input
           type="text"
           className="search-input"
+          style={{ padding: "10px", borderRadius: "25px" }}
           placeholder="Search a restaurant you want..."
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
@@ -72,6 +73,10 @@ const Body = () => {
             searchData(searchText, allRestaurants);
           }}
         />
+      </div> */}
+      <div className="search-container">
+        <input placeholder="Search a restaurant name" className="search-bar" />
+        <button className="search-button">Search</button>
       </div>
       {errorMessage && <div className="error-container">{errorMessage}</div>}
 

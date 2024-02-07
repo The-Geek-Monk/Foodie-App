@@ -13,12 +13,11 @@ export const RestaurantCard = ({
 }) => {
   return (
     <div className="card-container">
-      <div className="image-container">
-        <img
-          src={IMG_CDN_URL + cloudinaryImageId} // Placeholder image URL
-          alt="Restaurant"
-        />
-      </div>
+      <img
+        src={IMG_CDN_URL + cloudinaryImageId} // Placeholder image URL
+        alt="Restaurant"
+      />
+
       <div className="info-container">
         <span className="restaurant-name">{name}</span>
         <span className="food-categories">{cuisines.join(", ")}</span>
@@ -28,9 +27,19 @@ export const RestaurantCard = ({
           <h4
             style={
               avgRatingString < 4
-                ? { backgroundColor: "var(--light-red)" }
-                : avgRatingString === "--"
-                ? { backgroundColor: "white", color: "black" }
+                ? {
+                    backgroundColor: "#FF0000",
+                    padding: "2px",
+                    borderRadius: "5px",
+                    color: "black",
+                  }
+                : avgRatingString >= 4
+                ? {
+                    backgroundColor: "#00A300",
+                    padding: "2px",
+                    borderRadius: "5px",
+                    color: "black",
+                  }
                 : { color: "white" }
             }
           >
