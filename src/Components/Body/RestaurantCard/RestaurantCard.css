@@ -1,81 +1,145 @@
-.card-container {
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    flex-direction: column;
-    max-width: 250px;
-    max-height: 250px;
-    margin: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/*nakli*/
+/* .card {
+    width: 295px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid lavender;
+    margin: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(230, 230, 250, 1);
 }
 
-/* .image-container {
-    width: 200px;
-    height: 350px;
+.card__image {
+    position: relative;
+    height: 140px;
+    overflow-y: hidden;
+}
 
+.card__image>img {
+    max-width: 100%;
+    border-bottom-right-radius: 30px;
+    transform: rotate(10deg) translate(-15px, -55px);
+    position: absolute;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card__info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 30px 20px 30px;
+}
+
+.card__info h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.card__info p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card__info--price {
+    text-align: right;
+    color: orangered;
 } */
 
-.image-container img {
-    width: 250px;
-    height: 150px;
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
-
-.info-container {
-    padding: 5px 10px 5px;
-    flex: 1;
-    overflow-y: hidden;
-    min-height: 21%;
-
-}
-
-.restaurant-name {
-    flex-direction: row;
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 2px;
-    /* Adjust the width as needed */
-    white-space: nowrap;
+.snip1518 {
+    font-family: 'Lato', Arial, sans-serif;
+    position: relative;
     overflow: hidden;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.snip1518 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.snip1518 img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+}
+
+.snip1518 figcaption {
+    padding: 10%;
+    padding-bottom: calc(25%);
+    background-color: #ffffff;
+}
+
+.snip1518 h3 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflow */
     text-overflow: ellipsis;
 }
 
-.food-categories {
-    color: #666;
-    display: block;
-    margin-bottom: 10px;
-    width: 200px;
-    /* Adjust the width as needed */
+.snip1518 h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1px;
+    /* line-clamp: 1; */
     white-space: nowrap;
+    /* Prevent text from wrapping */
     overflow: hidden;
+    /* Hide any overflow */
     text-overflow: ellipsis;
-
 }
 
-.rating-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 15px;
+.snip1518 footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.065);
+    padding: 0 20px;
+    font-size: 13px;
+    line-height: 50px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
-.rating {
-    display: flex;
-    align-items: center;
+.snip1518 footer .icons {
+    position: absolute;
+    right: 20px;
+    top: 0;
 }
 
-.rating img {
-    margin-right: 8px;
+.snip1518 footer .icons>div {
+    display: inline-block;
+    margin-left: 8px;
 }
 
-.delivery-time,
-.price-range {
-    color: #666;
-    font-size: 14px;
+.snip1518 footer .icons i {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1em;
+}
+
+.snip1518 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
 }

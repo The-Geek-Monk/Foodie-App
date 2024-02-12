@@ -1,38 +1,80 @@
 .header {
     display: flex;
-    background-color: #e5e5e5;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-family: 'Lato', Arial, sans-serif;
 }
 
-ul {
+nav {
+    background: #fff;
+    border-radius: 50px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+nav ul li {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    color: black;
-}
-
-li:hover {
-    color: #f17228;
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
 }
 
-li {
-    font-weight: bold;
+li>a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+nav ul li::after {
+    content: "";
+    background: #FFBF00;
+    width: 80%;
+    height: 80%;
+    /* border-radius: 30px; */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover {
+    color: #fff;
+}
+
+nav ul li:hover::after {
+    top: 50%;
+    opacity: 1;
 }
 
 .login-button {
-    border-radius: 8px;
-    padding: 8px;
+    border: 1px solid #FFBF00;
+    border-radius: 3px;
+    color: #FFBF00;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 10px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: background .3s, color .3s;
 }
 
 .login-button:hover {
-    background-color: #04AA6D;
+    background-color: #FFBF00;
     color: white;
     cursor: pointer;
 }

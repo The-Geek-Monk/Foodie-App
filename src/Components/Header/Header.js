@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link, BrowserRouter as Router } from "react-router-dom"; // Import BrowserRouter and Link
 
 const Header = () => {
   return (
@@ -7,13 +8,19 @@ const Header = () => {
       <div className="left">
         <img src="logo.png" alt="Logo" className="logo" />
       </div>
-      <div className="center">
+      <nav className="center">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact Us</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/aboutus">About</Link>
+          </li>
+          <li>
+            <Link to="/contactus">Contact Us</Link>
+          </li>
         </ul>
-      </div>
+      </nav>
       <div className="right">
         <button className="login-button">Login</button>
       </div>

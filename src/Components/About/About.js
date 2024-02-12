@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import burgerImage from "../../asset/burger.png";
 
-export const About = () => {
+const About = () => {
   return (
     <div className="about-container">
       <div className="about-text">
@@ -22,3 +22,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

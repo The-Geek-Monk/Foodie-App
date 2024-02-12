@@ -1,56 +1,12 @@
 .body-container {
+    font-family: 'Lato', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: whitesmoke;
     border-radius: 5px;
-    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
     color: black;
     flex: 1;
-    margin: 10px;
-}
-
-.search-container {
-    margin-top: 10px;
-    display: flex;
-    /* flex: 1; */
-    width: 100%;
-    height: 15%;
-    justify-content: center;
-}
-
-.search-bar {
-    width: 30%;
-    align-items: center;
-    flex-direction: row;
-    padding: 10px;
-    font-size: 12px;
-}
-
-.search-button {
-    cursor: pointer;
-    padding: 10px;
-
-
-}
-
-/* .search-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    /* Adjust the margin as needed */
-/* }  */
-
-/* .search-input {
-    border-radius: 25px;
-    min-height: 30px;
-    margin-right: 5px;
-    width: 300px;
-} */
-
-.icon {
-    cursor: pointer;
-    /* Add any additional styling for the search icon */
+    margin-top: 0px;
 }
 
 .error-container {
@@ -65,4 +21,37 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* nakli */
+
+.container {
+    min-width: 60%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-head {
+    background: #fff;
+    width: 600px;
+    height: 55px;
+    display: flex;
+}
+
+.form-container {
+    flex: 1;
+    border: 1px #060606;
+    outline: none;
+}
+
+.form-button {
+    background: #FFBF00;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
 }

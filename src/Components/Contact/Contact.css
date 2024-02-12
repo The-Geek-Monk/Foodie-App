@@ -1,9 +1,12 @@
-.about-container {
+.contact-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 87vh;
     background-color: white;
     align-content: center;
+    margin: 20px;
+    overflow-y: hidden;
 }
 
 .about-text {
@@ -16,21 +19,31 @@
 
 }
 
-.burger-img {
-    flex: 1;
+.contact-img {
+    /* height: 100px; */
     text-align: center;
 }
 
 .form-section {
     flex: 1;
+    height: 500px;
+    padding-top: 70px;
+    /* background-color: #D97918; */
 }
 
 .input-text {
     margin: 15px;
 }
 
+/* .input-text :hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-style: none;
+} */
+
 .form-section h1 {
     margin: 15px;
+    font-size: xxx-large;
 }
 
 .form-section input {
@@ -48,4 +61,5 @@
 
 .btn {
     padding: 5px;
+    margin-top: 20px;
 }

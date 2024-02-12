@@ -1,8 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { FaSearch } from "react-icons/fa";
 import { RestaurantCard } from "./RestaurantCard/RestaurantCard";
 import "./Body.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 import { swiggy_api_URL } from "../Utils/constants";
 
@@ -58,27 +59,20 @@ const Body = () => {
 
   return (
     <div className="body-container">
-      {/* <div className="search-container">
-        <input
-          type="text"
-          className="search-input"
-          style={{ padding: "10px", borderRadius: "25px" }}
-          placeholder="Search a restaurant you want..."
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-        ></input>
-        <FaSearch
-          className="icon"
-          onClick={() => {
-            searchData(searchText, allRestaurants);
-          }}
-        />
-      </div> */}
-      <div className="search-container">
-        <input placeholder="Search a restaurant name" className="search-bar" />
-        <button className="search-button">Search</button>
+      <div class="container" action="">
+        <form className="form-head">
+          <input
+            className="form-container"
+            type="text"
+            placeholder="Search here..."
+            required
+          />
+          <button className="form-button" type="submit">
+            Search
+          </button>
+        </form>
       </div>
-      {errorMessage && <div className="error-container">{errorMessage}</div>}
+      {/* {errorMessage && <div className="error-container">{errorMessage}</div>} */}
 
       <div className="restaurant-container">
         {filteredRestaurants.map((restaurant) => {

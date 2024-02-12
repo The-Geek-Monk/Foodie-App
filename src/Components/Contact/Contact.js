@@ -2,11 +2,11 @@ import React from "react";
 import "./Contact.css";
 import burgerImage from "../../asset/contact.jpg";
 
-export const Contact = () => {
+const Contact = () => {
   return (
-    <div className="about-container">
-      <div className="burger-img">
-        <img src={burgerImage} alt="Burger" height={250} />
+    <div className="contact-container">
+      <div className="contact-img">
+        <img src={burgerImage} alt="Burger" height={500} />
       </div>
       <div className="form-section">
         <h1>Contact us</h1>
@@ -30,3 +30,5 @@ export const Contact = () => {
     </div>
   );
 };
+
+export default Contact;
