@@ -59,7 +59,24 @@
     margin: 15px;
 }
 
-.btn {
+
+.submit-btn {
+    border: 1px solid #FFBF00;
+    border-radius: 3px;
+    color: #FFBF00;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2em;
     padding: 5px;
     margin-top: 20px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    transition: background .3s, color .3s;
+}
+
+.submit-btn:hover {
+    background-color: #FFBF00;
+    color: white;
+    cursor: pointer;
 }

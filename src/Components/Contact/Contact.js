@@ -21,7 +21,7 @@ const Contact = () => {
             <input placeholder="Type your Message here..." />
           </div>
           <div className="input-button">
-            <button className="btn" type="submit">
+            <button className="submit-btn" type="submit">
               Submit
             </button>
           </div>

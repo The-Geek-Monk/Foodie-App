@@ -1,12 +1,14 @@
 import React from "react";
 import "./Header.css";
 import { Link, BrowserRouter as Router } from "react-router-dom"; // Import BrowserRouter and Link
-
+import logo from "../../asset/food-logo.png";
 const Header = () => {
   return (
     <header className="header">
       <div className="left">
-        <img src="logo.png" alt="Logo" className="logo" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="logos" width={150} />
+        </Link>
       </div>
       <nav className="center">
         <ul>

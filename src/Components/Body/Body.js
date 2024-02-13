@@ -72,7 +72,7 @@ const Body = () => {
           </button>
         </form>
       </div>
-      {/* {errorMessage && <div className="error-container">{errorMessage}</div>} */}
+      {errorMessage && <div className="error-container">{errorMessage}</div>}
 
       <div className="restaurant-container">
         {filteredRestaurants.map((restaurant) => {

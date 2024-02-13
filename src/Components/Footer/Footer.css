@@ -1,8 +1,15 @@
 .footerContainer {
     display: flex;
     justify-content: center;
-    background-color: #e5e5e5;
-    color: black;
+    background-color: black;
+    color: #FFBF00;
+
+}
+
+.footer-text {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    overflow-y: hidden;
 }
 
 .heart {

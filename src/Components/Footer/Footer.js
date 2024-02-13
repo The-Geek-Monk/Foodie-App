@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <div className="footerContainer">
-      <p>
+      <p className="footer-text">
         Created By <span className="heart">&#9829;</span> Vasu Sehgal the Foodie
         App
       </p>
